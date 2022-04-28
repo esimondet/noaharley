@@ -1,11 +1,13 @@
-import Placeholder from './components/placeholder';
+import Placeholder from './components/Placeholder';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <main>
+    <>
       <Placeholder />
-    </main>
+      <Navbar />
+    </>
   );
 }
 
