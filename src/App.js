@@ -21,8 +21,8 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path='/' element={<Journey />} />
-            <Route path='/Gallery' element={<Gallery />} />
+            <Route path='/' element={<Gallery />} />
+            <Route path='/Journey' element={<Journey />} />
             <Route path='/Registry' element={<Registry />} />
           </Routes>
         </main>
