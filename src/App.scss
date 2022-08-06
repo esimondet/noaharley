@@ -48,7 +48,7 @@ p {
   height: 2px;
 	border-radius: 50%;
 	opacity: 0;
-  z-index: -99;
+  z-index: 99;
 	box-shadow: generate-random-stars($screen-width, $color, $density);
 	animation-name: glowing-stars;
   animation-duration: $speed+s;
