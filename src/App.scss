@@ -3,6 +3,7 @@
 
 html {
   background-color: black;
+  color: white;
 }
 
 h1 {
@@ -11,6 +12,10 @@ h1 {
 
 p {
   font-family: 'Roboto', sans-serif;
+}
+
+.label {
+  color: white;
 }
 
 .box {
@@ -39,6 +44,7 @@ p {
   height: 2px;
 	border-radius: 50%;
 	opacity: 0;
+  z-index: -99;
 	box-shadow: generate-random-stars($screen-width, $color, $density);
 	animation-name: glowing-stars;
   animation-duration: $speed+s;
@@ -55,27 +61,27 @@ body{
 /* Change colors for multi-colors star groups */
 
 #stars-group-1{
-	@include stars-content(1800, #fff, 200, 1, 0);
+	@include stars-content(1800, #fff, 200, 3, 0);
 }
 
 #stars-group-2{
-	@include stars-content(1800, #fff, 200, 1, 0.1);
+	@include stars-content(1800, #fff, 200, 3, 0.4);
 }
 
 #stars-group-3{
-	@include stars-content(1800, #fff, 200, 1, 0.2);
+	@include stars-content(1800, #fff, 200, 3, 0.8);
 }
 
 #stars-group-4{
-	@include stars-content(1800, #fff, 200, 1, 0.3);
+	@include stars-content(1800, #fff, 200, 3, 1.2);
 }
 
 #stars-group-5{
-	@include stars-content(1800, #fff, 200, 1, 0.4);
+	@include stars-content(1800, #fff, 200, 3, 1.6);
 }
 
 #stars-group-6{
-	@include stars-content(1800, #fff, 200, 1, 0.5);
+	@include stars-content(1800, #fff, 200, 3, 2.0);
 }
 
 
