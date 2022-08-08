@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Journey from './components/Journey';
 import Gallery from './components/Gallery';
 import Registry from './components/Registry';
+import RSVP from './components/RSVP';
 import './App.scss';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div id='stars-group-5'></div>
       <div id='stars-group-6'></div>
       <Placeholder />
+      <RSVP />
       <Router>
         <Navbar />
         <main>
@@ -24,6 +26,7 @@ function App() {
             <Route path='/' element={<Journey />} />
             <Route path='/Gallery' element={<Gallery />} />
             <Route path='/Registry' element={<Registry />} />
+            <Route path='/RSVP' element={<RSVP />} />
           </Routes>
         </main>
       </Router>
